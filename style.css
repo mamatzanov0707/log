@@ -1,0 +1,45 @@
+body{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background: #1d1d1d;
+    margin: 2px;
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 0 3px #000000;
+    border-radius: 10px;
+}
+.circle:hover{
+    transition-duration: 0s;
+}
+@keyframes anim {
+    0%{
+        transform:rotate(0) translateX(0);
+    }
+    30%{
+        transform:translateX(-1000px);
+    }
+    60%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: rotate(900deg) ;
+    }
+    
+}
